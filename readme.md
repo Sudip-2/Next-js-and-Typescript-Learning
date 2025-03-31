@@ -31,7 +31,7 @@ This repository documents my journey of learning **Next.js** with **TypeScript**
 ## 🚀 Getting Started
 ### 1️⃣ Clone the repo:
 ```sh
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Sudip-2/Next-js-and-Typescript-Learning.git
 ```
 ### 2️⃣ Install dependencies:
 ```sh
