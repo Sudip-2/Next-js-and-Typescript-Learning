@@ -1,3 +1,4 @@
+"use strict";
 // enums are a special class that allows developers to define a set of named constants
 var LoginError;
 (function (LoginError) {
@@ -6,7 +7,7 @@ var LoginError;
     LoginError[LoginError["wrongCredentials"] = 2] = "wrongCredentials";
     LoginError[LoginError["internal"] = 3] = "internal";
 })(LoginError || (LoginError = {}));
-var printErrorMsg = function (error) {
+const printErrorMsg = (error) => {
     if (error == LoginError.unAuthorized) {
         console.log("Unauthorized User");
     }
