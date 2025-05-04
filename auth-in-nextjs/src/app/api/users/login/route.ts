@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
       expiresIn: "1d",
     });
     const response = NextResponse.json({ message: "Login Successfull" });
-    response.cookies.set("token", token, { httpOnly: true });
+    response.cookies.set("token", token, { httpOnly: true ,expires:new Date(Date.now() + 24 * 60 * 60 * 1000)});
     return response;
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });
